@@ -1,0 +1,35 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-release">Released</mat-option>
+      <mat-option value="-add">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img
+        class="game-thumbnail"
+        src="https://image.thanhnien.vn/w1024/Uploaded/2022/wovunka/2022_04_22/god-7624.png"
+        alt="thumbnail"
+      />
+    </div>
+    <div class="game-description">
+      <p class="game-name">God of war</p>
+      <div class="game-platforms">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/906/906325.png"
+          alt="game-platform"
+          class="game-platform"
+        />
+      </div>
+    </div>
+  </div>
+</div>
